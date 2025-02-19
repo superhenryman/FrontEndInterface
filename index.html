@@ -1,9 +1,191 @@
+superhenryman
+superhenryman
+Online
+
+superhenryman — 2/13/2025 6:51 PM
+I'VE BEEN TRYING TO GET THE PREVIOUS BUTTON WORKING
+I ALMOST WENT TO PHP
+HELP
+jerry. — 2/14/2025 3:33 PM
+kareem
+kareem
+kareem
+do u have a nerf gun
+@superhenryman
+jerry. — 2/14/2025 3:34 PM
+mb i didnt see this
+i shall fix it
+superhenryman — 2/14/2025 3:40 PM
+no
+jerry. — 2/14/2025 3:40 PM
+👍
+ur code is so bad sobpray
+Image
+superhenryman — 2/14/2025 3:42 PM
+actually yeah i do
+jerry. — 2/14/2025 3:42 PM
+send pic
+superhenryman — 2/14/2025 3:42 PM
+eating pizza rn
+jerry. — 2/14/2025 3:42 PM
+👍
+jerry. — 2/14/2025 4:23 PM
+can u send a pic now
+btw dont forget to come at 5
+superhenryman — 2/14/2025 4:24 PM
+i won't bro
+Image
+jerry. — 2/14/2025 4:26 PM
+ok i can tell it doesnt have a spinning cylinder
+jerry. started a call that lasted 2 minutes. — 2/14/2025 4:42 PM
+jerry. — 2/14/2025 4:43 PM
+@superhenryman
+answer me
+superhenryman — 2/14/2025 4:43 PM
+my mic
+Image
+jerry. started a call that lasted a minute. — 2/14/2025 4:50 PM
+superhenryman — 2/15/2025 9:28 PM
+i made a little module which gives you every prayer time
+Image
+import requests
+def Get_Prayer_Times():
+    """
+        Returns Fajir, Duhur, Asr, Maghrib, and Isha times.
+    """
+    ip_response = requests.get('https://api.ipify.org?format=json')
+Expand
+PrayerTimes.py
+3 KB
+its so good
+jerry. — 2/15/2025 9:39 PM
+W
+superhenryman — 2/15/2025 9:40 PM
+oh yeah also i tried using that api u used in ur prayer times
+i was so confused
+superhenryman — Yesterday at 6:27 PM
+yo moh
+i got a tip for u for JS
+always at the top of ur JS code write "use strict";
+Why Strict Mode?
+Strict mode makes it easier to write "secure" JavaScript.
+
+Strict mode changes previously accepted "bad syntax" into real errors.
+
+As an example, in normal JavaScript, mistyping a variable name creates a new global variable. In strict mode, this will throw an error, making it impossible to accidentally create a global variable.
+
+In normal JavaScript, a developer will not receive any error feedback assigning values to non-writable properties.
+
+In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.
+Why should I use TypeScript?
+JavaScript is a loosely typed language. It can be difficult to understand what types of data are being passed around in JavaScript.
+
+In JavaScript, function parameters and variables don't have any information! So developers need to look at documentation, or guess based on the implementation.
+
+TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.
+
+For example, TypeScript will report an error when passing a string into a function that expects a number. JavaScript will not.
+https://www.w3schools.com/typescript/index.php
+Free online TypeScript tutorial from W3Schools.com, complete with Try it Yourself examples and exercises.
+Image
+https://www.typescriptlang.org/download/
+How to set up TypeScript
+Add TypeScript to your project, or install TypeScript globally
+i saved you in JS rn
+Static Typing – Catch errors at compile time instead of runtime.
+Better Code Completion & IntelliSense – VSCode (your favorite editor) works way better with TypeScript.
+Easier Debugging – No more guessing if a variable is undefined in runtime.
+Object-Oriented Features – It has interfaces, access modifiers, generics, etc.
+Scalability – If you're making a large project, TypeScript will save you from spaghetti code. 
+jerry. — Yesterday at 6:32 PM
+nuh uh
+superhenryman — Yesterday at 6:32 PM
+do it
+jerry. — Yesterday at 6:33 PM
+fine
+superhenryman — Today at 12:09 AM
+cool thing about typescript
+you compile typescript into JS
+so no JS errors
+no JS bullshit
+superhenryman — Today at 3:54 PM
+moh
+style it
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PBL Website Query</title>
+</head>
+<body>
+    <h1>PBL Website Services</h1>
+    <form>
+        <label for="name">What's your name?</label><br>
+        <input type="text" name="name" required><br>
+        <label for="email">What's your email?</label><br>
+        <input type="email" name="email" required><br>
+        <label for="grade">What's your grade?</label><br>
+        <input type="text" name="grade"><br>
+        <label for="type">What do you want to do?</label>
+        <select id="grade" name="grade">
+            <option value="Basic Website">Basic Website (best for showing info, need to pay 5 dinars)</option>
+            <option value="Robotics Website">Robotics Controller with website (best for IoT projects, need to pay 10 dinars)</option>
+        </select>
+    </form>
+</body>
+</html>
+pls
+jerry. — Today at 3:55 PM
+👍
+superhenryman — Today at 3:55 PM
+thx
+superhenryman — Today at 4:17 PM
+typescript file
+const webname = document.getElementById('name');
+const webemail = document.getElementById('email');
+const grade = document.getElementById('grade');
+const type = document.getElementById('type');
+async function GetData() {
+    try {
+        let response = await fetch("https://ip.com/api/data");
+        let data = await response.json();
+        if (webname) webname.textContent = data.name  "N/A";
+        if (webemail) webemail.textContent = data.email  "N/A";
+        if (grade) grade.textContent = data.grade  "N/A";
+        if (type) type.textContent = data.type  "N/A";
+    } catch (error) {
+        console.error("Error fetching data: ", error);
+    } finally {
+        setTimeout(GetData, 1000);
+    }
+}
+vs: the actual JS
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+Expand
+message.txt
+5 KB
+jerry. — Today at 4:18 PM
+i prefer the actual js
+cuz im a maniac
+superhenryman — Today at 4:18 PM
+i got saved from 4 bullshit errors
+jerry. — Today at 4:23 PM
+i fixed up the html code
+im adding some more final touches
+superhenryman — Today at 4:23 PM
+also srry but do this one too
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         table {
@@ -44,4 +226,284 @@
     </div>
     <script src="scripts.js"></script> <!--Please work.-->
 </body>
+</html> 
+jerry. — Today at 4:23 PM
+brother
+superhenryman — Today at 4:23 PM
+yeah?
+jerry. — Today at 4:34 PM
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBL Website Query</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #1a1a2e, #16213e);
+        padding: 20px;
+        animation: bgPan 15s infinite alternate;
+      }
+
+      @keyframes bgPan {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+
+      h1 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: fadeInDown 1s ease;
+        position: relative;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: #e94560;
+      }
+
+      form {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 500px;
+        transform: scale(0.95);
+        animation: formEntrance 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+
+      @keyframes formEntrance {
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      label {
+        display: block;
+        margin: 15px 0 8px;
+        color: #1a1a2e;
+        font-size: 14px;
+        font-weight: 500;
+        transform: translateY(20px);
+        opacity: 0;
+        animation: labelAppear 0.4s ease forwards;
+      }
+
+      @keyframes labelAppear {
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 12px 20px;
+... (117 lines left)
+Collapse
+index.html
+7 KB
+superhenryman — Today at 4:35 PM
+tysm
+jerry. — Today at 4:35 PM
+np
+superhenryman — Today at 4:36 PM
+you're credited btw
+jerry. — Today at 4:36 PM
+ok
+superhenryman — Today at 4:36 PM
+u cooked 🔥
+jerry. — Today at 4:36 PM
+about to finish the table
+thingy
+jerry. — Today at 4:37 PM
+ty
+superhenryman — Today at 4:37 PM
+also this is my first project with JS
+my first own myself
+jerry. — Today at 4:38 PM
+table website
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface</title>
+Expand
+index.html
+4 KB
+superhenryman — Today at 4:38 PM
+u cooked so hard
+jerry. — Today at 4:38 PM
+inspired by the one i made originally
+﻿
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #1a1a2e, #16213e);
+        padding: 20px;
+        animation: bgPan 15s infinite alternate;
+      }
+
+      @keyframes bgPan {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+
+      h1 {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        animation: fadeInDown 1s ease;
+        position: relative;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      }
+
+      h1::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: #e94560;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 600px;
+        transform: scale(0.95);
+        animation: formEntrance 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+      }
+
+      @keyframes formEntrance {
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+      }
+
+      th {
+        background-color: #f5f5f5;
+        color: #1a1a2e;
+        font-weight: 600;
+      }
+
+      td {
+        background-color: #fff;
+        color: #333;
+      }
+
+      tr:hover td {
+        background-color: #f9f9f9;
+      }
+
+      #req {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="req">Website Requests</h1>
+      <table id="table">
+        <tr>
+          <th>Name</th>
+          <td id="name"></td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td id="email"></td>
+        </tr>
+        <tr>
+          <th>Grade</th>
+          <td id="grade"></td>
+        </tr>
+        <tr>
+          <th>Type of request</th>
+          <td id="type"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="scripts.js"></script>
+    <!--Please work.-->
+  </body>
 </html>
