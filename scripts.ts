@@ -16,3 +16,4 @@ async function GetData() {
         setTimeout(GetData, 1000);
     }
 }
+GetData()
