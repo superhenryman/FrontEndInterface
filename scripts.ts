@@ -4,7 +4,7 @@ const grade = document.getElementById('grade');
 const type = document.getElementById('type');
 async function GetData() {
     try {
-        let response = await fetch("https://ip.com/api/data");
+        let response = await fetch("https://pblwebsitemaker-production.up.railway.app/api/data");
         let data = await response.json();
         if (webname) webname.textContent = data.name || "N/A";
         if (webemail) webemail.textContent = data.email || "N/A";
