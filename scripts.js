@@ -45,7 +45,7 @@ function GetData() {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 3, 4, 5]);
-                    return [4 /*yield*/, fetch("https://ip.com/api/data")];
+                    return [4 /*yield*/, fetch("https://pblwebsitemaker-production.up.railway.app/api/data")];
                 case 1:
                     response = _a.sent();
                     return [4 /*yield*/, response.json()];
